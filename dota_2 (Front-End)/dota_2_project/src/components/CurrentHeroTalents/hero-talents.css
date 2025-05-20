@@ -1,0 +1,84 @@
+.current-hero-talents {
+    width: 600px;
+    min-width: 600px;
+    height: 480px;
+    position: absolute;
+    top: -150px;
+    display: none;
+    left: -260px;
+    transition: 0.3s ease;
+    background: linear-gradient(135deg, #656f79 0%, #191c1f 100%);
+    box-shadow: 0 0 20px 10px rgba(0, 0, 0, 0.2);
+    text-align: center;
+}
+
+.current-hero-talent {
+    gap: 20px;
+    margin-top: 50px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.current-hero-talent div {
+    background: rgba(35, 39, 43, 0.8);
+    transition: 0.3ms ease;
+}
+
+.span-talent {
+    font-family: Arial, Helvetica, sans-serif;
+    width: 150px;
+    height: 50px;
+    color: #bababa;
+    position: relative;
+    z-index: 50;
+}
+
+.span-talents {
+    width: 45%;
+    padding: 20px;
+    height: 70px;
+    text-align: center;
+    color: white;
+}
+
+.span-talent:hover {
+    color: #e7d292;
+
+    text-shadow:
+            0 0 5px #e7d292, /* Основной свет */
+            0 0 10px #693220, /* Дополнительный свет */
+            0 0 15px #693220, /* Еще один уровень свечения */
+            0 0 20px #693220; /* Наиболее яркий свет */
+}
+
+.separator {
+    border-radius: 50%;
+    padding: 30px;
+    background-color: rgba(0, 0, 0, 0.85);
+    width: 80px;
+    z-index: 50;
+    height: 80px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #e7d292;
+    text-shadow:
+            0 0 5px #e7d292, /* Основной свет */
+            0 0 10px #693220, /* Дополнительный свет */
+            0 0 15px #693220, /* Еще один уровень свечения */
+            0 0 20px #693220; /* Наиболее яркий свет */
+}
+
+.separator-border {
+    position: relative;
+    top: -70px;
+    left: -80px;
+    border-radius: 50%;
+    z-index: 51;
+    width: 90px;
+    height: 90px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}

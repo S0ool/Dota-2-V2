@@ -1,0 +1,30 @@
+.infinity-carousel div {
+    display: flex;
+    flex-direction: row;
+    width: 200%;
+}
+
+.infinity-carousel span {
+    width: 150%;
+    display: flex;
+    justify-content: space-around;
+}
+
+
+@keyframes toLeft {
+    0% {
+        transform: translateX(0);
+    }
+    100% {
+        transform: translateX(-150%);
+    }
+}
+
+@keyframes toRight {
+    0% {
+        transform: translateX(-150%);
+    }
+    100% {
+        transform: translateX(0);
+    }
+}

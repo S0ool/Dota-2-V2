@@ -1,0 +1,180 @@
+/*Main Page*/
+
+.main-container {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.main-first-slide {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-family: "Goudy Old Style", serif;
+    margin-top: 350px;
+    font-size: 70px;
+    transition: 1s ease-out;
+    text-transform: uppercase;
+    color: white;
+    z-index: 2;
+    border-bottom: 3px solid #ff4400;
+}
+
+
+
+.main-wrapper {
+    width: 100%;
+    height: 75vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: left;
+    margin-left: 100px;
+    color: white;
+    gap: 20px;
+    text-transform: uppercase;
+}
+
+.main-slogan {
+    font-size: 70px;
+    font-family: 'Goudy Old Style', serif;
+    font-weight: 700;
+    line-height: 0.95;
+    width: 70%;
+}
+
+.main-wrapper span {
+    font-size: 25px;
+    font-family: 'Sorts Mill Goudy', serif;
+    color: #aaaaaa;
+    width: 200px;
+    padding-bottom: 20px;
+    border-bottom: #ff4400 3px solid;
+}
+
+.main-wrapper video {
+    width: 100%;
+    height: 75vh;
+    object-fit: cover;
+    position: absolute;
+    z-index: -2;
+    top: 0;
+    left: 0;
+}
+
+.main-button {
+    width: 100%;
+    display: flex;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+
+.main-button button {
+    background: none;
+    border: 3px solid #838383;
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-right: 20px;
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    padding: 20px 30px;
+    font-size: 20px;
+    transition: 0.3s ease-out;
+}
+
+.main-news-container {
+    width: 100%;
+    height: 300px;
+    margin-top: -50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.main-news-button {
+    display: flex;
+    width: 78%;
+    flex-direction: row;
+    gap: 20px;
+    align-items: center;
+    justify-content: flex-start;
+    margin-bottom: 50px;
+    color: white;
+    z-index: 2;
+}
+
+.main-second-section {
+    display: flex;
+    justify-content: center;
+    margin-top: -50px;
+    z-index: -3;
+    position: relative;
+}
+
+.main-video-layer {
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.4);
+}
+
+.main-news-button p:hover, a:hover {
+    cursor: pointer;
+}
+
+.main-news-button a {
+    text-decoration: none;
+    color: #838383;
+}
+
+.main-news-button a:hover {
+    color: white;
+}
+
+.main-heroes-icons {
+    padding-top: 10px;
+    position: relative;
+}
+
+.main-about {
+    background-color: black;
+    padding-top: 100px;
+}
+
+.vinete {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 105%;
+    background: radial-gradient(circle, rgb(0, 0, 0, 0) 30%, rgb(0, 0, 0) 80%);
+    pointer-events: none;
+}
+
+
+
+/*Heroes Page*/
+
+.heroes {
+    width: 100%;
+    height: 100%;
+    min-height: 100vh;
+    background-image: url("https://cdn.akamai.steamstatic.com/apps/dota2/images/dota_react/backgrounds/greyfade.jpg");
+    background-size: cover;
+    padding-bottom: 50px;
+}
+
+.view-all:hover .header-arrow{
+    margin-left: 20px;
+    filter: brightness(1);
+}

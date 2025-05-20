@@ -1,0 +1,15 @@
+
+.arrow{
+    display: inline-block;
+    background-image: url('https://cdn.akamai.steamstatic.com/apps/dota2/images/dota_react//arrow_left.png');
+    width: 20px;
+    height: 20px;
+    margin: 0 8px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    transform: rotateZ(180deg);
+    transition: 0.3s ease-in-out;
+    filter: brightness(0.4);
+
+}
+

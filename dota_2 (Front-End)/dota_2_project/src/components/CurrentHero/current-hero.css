@@ -1,0 +1,434 @@
+.current-hero {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    z-index: -20;
+    flex-direction: column;
+}
+
+.current-hero-info {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    background-image: url("https://cdn.akamai.steamstatic.com/apps/dota2/images/dota_react/backgrounds/greyfade.jpg");
+    background-size: cover;
+    justify-content: space-around;
+    padding-bottom: 30px;
+}
+
+.hero-talents:hover .current-hero-talents {
+    display: block;
+}
+.hero-skill-img,.talents {
+   transition: filter 0.3s ease;
+}
+
+.hero-skill-img:hover,.talents:hover {
+    cursor: pointer;
+    transform: scale(1.1);
+    transition: 0.1s ease-in-out;
+    filter: brightness(1) saturate(1);
+}
+
+.current-hero-about {
+    width: 100%;
+    height: 300px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    background: linear-gradient(to right, #252728 0%, #101415 100%);
+    z-index: 20;
+    box-shadow: 0 0 100px 150px rgba(0, 0, 0, 0.5);
+}
+
+
+/*Hero Video*/
+
+.hero-background {
+    width: 100%;
+    height: 100vh;
+    position: absolute;
+    top: 0;
+    right: 0;
+    pointer-events: none;
+    object-fit: none;
+}
+
+.hero-background video {
+    position: absolute;
+    width: 1500px;
+    right: 0;
+    top: -100px;
+}
+
+.black-line {
+    width: 400px;
+    height: 300vh;
+    position: absolute;
+    top: -130%;
+    right: 0;
+    background-color: #545a5f;
+    z-index: -10;
+    transform: rotate(45deg);
+}
+
+.hero-attr {
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    color: white;
+    text-transform: uppercase;
+    align-items: center;
+}
+
+.hero-info {
+    display: flex;
+    width: 35%;
+    height: 50%;
+    flex-direction: column;
+    gap: 20px;
+    z-index: 20;
+    margin-top: -100px;
+    color: #959595;
+}
+
+.full-history {
+    color: #777777;
+    text-decoration: underline;
+}
+.full-history:hover {
+    cursor: pointer;
+    color: white;
+}
+
+.hero-description {
+    color: white;
+    width: 100%;
+}
+
+.hero-description h1 {
+    font-size: 6em;
+}
+
+.hero-description h2 {
+    margin: 0 auto 20px;
+    color: #a5e0f3;
+}
+
+.hero_attack_type {
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    color: white;
+    margin-top: -10px;
+}
+
+.hero-complexity {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 30px;
+}
+
+.comp {
+    width: 25px;
+    height: 25px;
+    border: 1px solid white;
+    transform: rotate(45deg);
+}
+
+.comp.comp-active {
+    background-color: white;
+}
+
+.hero-abilities {
+    position: relative;
+    z-index: 21;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-end;
+    height: 50%;
+    gap: 30px;
+    margin-top: 350px;
+}
+
+.hero-skills {
+    display: flex;
+    flex-direction: column;
+    color: white;
+}
+
+.hero-skill {
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+
+}
+
+.hero-skill img {
+    width: 90px;
+    height: 90px;
+}
+
+.hero-main-stats {
+    display: flex;
+    flex-direction: row;
+    gap: 40px;
+    align-items: center;
+    justify-content: center;
+    width: 33%;
+    min-width: 200px;
+}
+
+.hero-hp {
+    display: flex;
+    flex-direction: column;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.hero-hp img {
+    width: 200px;
+    height: 120px;
+}
+
+.hero-hp p:first-of-type {
+    background: linear-gradient(to right, #296423 0%, #7aef3c 100%);
+    color: white;
+    text-align: center;
+    position: relative;
+}
+
+.hero-hp p:first-of-type span {
+    position: absolute;
+    left: 150px;
+    color: #286323;
+}
+
+
+
+.hero-hp p:last-of-type {
+    background: linear-gradient(to right, #1158dc 0%, #72f4fe 100%);
+    color: white;
+    text-align: center;
+    position: relative;
+}
+
+.hero-hp p:last-of-type span {
+    position: absolute;
+    left: 150px;
+    color: #155edd;
+}
+
+.hero-all-attr {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.hero-all-attr img {
+    width: 40px;
+    height: 40px;
+}
+
+.hero-all-attr div {
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    align-items: center;
+    color: white;
+}
+
+.hero-about-roles {
+    width: 33%;
+    min-width: 750px;
+    max-width: 750px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 30px;
+    justify-content: center;
+}
+
+.hero-about-role {
+    width: 200px;
+    color: white;
+    font-family: Arial, sans-serif;
+}
+
+.hero-about-role div {
+    background-color: #4c4c4c;
+    width: 100%;
+    margin-top: 10px;
+    height: 5px;
+}
+
+.hero-about-role p {
+    background:white;
+    height: 5px;
+}
+
+.current-hero-type {
+    display: flex;
+    flex-direction: row;
+    width: 33%;
+    gap: 40px;
+    min-width: 750px;
+    max-width: 750px;
+    justify-content: center;
+    color: white;
+    font-family: Arial, sans-serif;
+}
+
+.grey {
+    color: #838383;
+}
+
+.current-hero-atack {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+
+}
+
+.current-hero-atack div {
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    align-items: center;
+}
+.hero-skill-img{
+    width: 100px;
+    height: 100px;
+    padding: 0;
+    margin: 0;
+    filter: saturate(0%) brightness(50%);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+
+}
+.extra_desc{
+    padding: 5px;
+    background: linear-gradient(to right, #010cfb 0%, #213083 100%);
+    border-radius: 7px;
+
+}
+.full-history-hero{
+    overflow-y: scroll;
+    max-height: 200px;
+    padding: 10px;
+    background: linear-gradient(to right, #272727 0%, #686868 100%);
+    border-radius: 7px;
+
+}
+.allHeroes{
+    transition: filter 0.3s ease;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    color: white;
+    width: 150px;
+    margin: 0 auto;
+    font-family: Arial, sans-serif;
+    img{
+        width: 100%;
+        height: 100%;
+    }
+}
+.allHeroes:hover{
+    cursor: pointer;
+    filter: brightness(1.5);
+}
+.nextPrev{
+    flex-wrap: nowrap;
+    display: flex;
+    flex-direction: row;
+    color: white;
+    font-family: Arial, sans-serif;
+    height: 150px;
+
+    .video{
+        margin-top: -200px;
+        height: 350px;
+        position: relative;
+        right: 0;
+        transition: margin-top 0.3s ease;
+    }
+
+    .next{
+        justify-content: space-between;
+    }
+    .prev{
+        justify-content: flex-start;
+
+
+    }
+}
+.next-heroes{
+    transition: filter 0.3s ease;
+    display: flex;
+    flex-direction: row;
+    color: white;
+    font-family: Arial, sans-serif;
+    background: linear-gradient(to right, #000000 0%,  #2b2a2a  100%);
+    width: 100%;
+    justify-items: flex-end;
+
+
+    img{
+        width: 30px;
+        height: 30px;
+    }
+}
+.next-heroes:hover{
+    cursor: pointer;
+    filter: brightness(1.2);
+}
+.next-heroes:hover video{
+    filter: brightness(1.2);
+    margin-top: -250px;
+}
+.textHero{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    width: 200px;
+    height: 100%;
+    font-family: Arial, sans-serif;
+    color: white;
+    padding-top: 30px;
+    gap: 10px;
+    position: relative;
+    *{
+        height: 30px;
+    }
+    h1{
+        width: 500px;
+
+    }
+    h4{
+        font-weight: 500;
+    }
+
+
+
+}
+.nextText{
+    margin-left: 30px;
+
+}
+.prevText{
+    margin-right: 80px;
+    align-items: flex-end;
+    text-align: right;
+}
+h5{
+    height: 10px !important;
+}
+h4{
+    text-align: center;
+    align-content: center;
+}
