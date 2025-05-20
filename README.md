@@ -19,4 +19,8 @@ in header will add tab "Game" (all info there), and tab "Esports"
 I still use official sources for image and video data (mostly) 
 because they take up a lot of space, I'm too lazy to host them myself, 
 and I don't really see the point — unless the official servers go offline,
-but even then, why would I need it?
+but even then, why would I need it? And you might ask — why bother parsing
+at all if it won't work properly without the official servers? 
+Well, for me, it was mostly a way to test my skills. Besides, 
+I enjoy backend more, and building just the frontend didn’t make much sense 
+to me — frontend takes a lot of time, but not necessarily a lot of skill.
